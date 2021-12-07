@@ -1,0 +1,20 @@
+@import "src/styles/base";
+
+.item {
+    margin-bottom: 24px;
+}
+
+.link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.linkActive {
+    composes: link;
+    color: $secondary-color;
+}

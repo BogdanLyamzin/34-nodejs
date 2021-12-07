@@ -1,0 +1,18 @@
+@mixin flex ($main-axis: flex-start, $cross-axis: stretch){
+    display: flex;
+    flex-wrap: wrap;
+
+    @if ($main-axis != flex-start) {
+        justify-content: $main-axis;
+    }
+
+    @if ($cross-axis != stretch) {
+        align-items: $cross-axis;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet-screen) {
+        @content;
+    }
+}
