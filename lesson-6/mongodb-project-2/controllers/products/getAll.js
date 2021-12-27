@@ -1,7 +1,7 @@
 const {Product} = require("../../models");
 
-const getAll = async(req, res, next)=> {
-    const products = await Product.find({}, "_id name price status active code");
+const getAll = async(req, res)=> {
+    const products = await Product.find({}, "-createdAt -updatedAt");
     res.json(products);
 }
 
