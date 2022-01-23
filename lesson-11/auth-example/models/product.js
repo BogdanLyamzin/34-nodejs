@@ -46,6 +46,10 @@ const joiSchema = Joi.object({
 })
 
 const Product = model("product", productSchema);
+
+// Product.watch().on("change", data => {
+
+// })
 // categories => category
 // mice => mouse
 

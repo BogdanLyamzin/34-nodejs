@@ -17,7 +17,7 @@ describe("test auth", ()=> {
     })
 
     afterEach((done)=> {
-        mongoose.connection.db.dropDatabase(()=> {
+        mongoose.connection.db.dropCollection(()=> {
             mongoose.connection.close(()=> done())
         })
     })
